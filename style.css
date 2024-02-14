@@ -7,9 +7,30 @@ body{
     background-color: white;
 }
 
+.carousel .item {
+    height: 300px;
+  }
+
+  .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+}
+
 .carousel-inner {
     width: 70%;
     margin: auto;
+    max-height: 600px !important;
+}
+
+.carousel-inner img{
+    overflow: hidden;
+}
+
+li:hover{
+    color: #a51417;
+    text-decoration:underline;
 }
 
 #logocontainer{
@@ -40,7 +61,7 @@ body{
 .bg-gradient{
     background-color: #a51417;
     color: #a51417;
-    background-image: var(--bs-gradient);
+    /* background-image: var(--bs-gradient); */
 }
 
 #logo{
